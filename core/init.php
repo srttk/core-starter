@@ -1,6 +1,14 @@
 <?php
+
+/* Session Start */
 session_start();
+
+/* Error reporting */
 error_reporting(E_ALL);
+
+/* set default timezone */
+
+date_default_timezone_set('UTC');
 
 define("ROOT_DIR",__DIR__."/../");
 require_once(ROOT_DIR."vendor/autoload.php");
