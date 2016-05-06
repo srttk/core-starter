@@ -1,4 +1,16 @@
 {
+	"name": "saratonite/core-starter",
+    "type": "library",
+    "description": "A simple core php starter",
+    "keywords": ["corephp"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sarath",
+            "email": "sarath.hacks@gmail.com",
+            "role": "Creator"
+        }
+    ],
     "require": {
         "twig/twig": "~1.0"
     }
