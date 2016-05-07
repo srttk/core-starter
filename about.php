@@ -3,4 +3,4 @@
 require(__DIR__."/core/init.php");
 
 //$app['middleware']->auth();
-echo $template->render('about.html',[]);
+echo $app["template"]->render('about.html',[]);

@@ -34,8 +34,8 @@ $con = new Connection($config['DB_HOST'],$config['DB_USER'],$config['DB_PASS'],$
 
 Model::boot($con->getConnction());
 
-$flash = new Flash();
-$flash->start();
+$app["flash"] = new Flash();
+$app["flash"]->start();
 
 
 
@@ -44,8 +44,8 @@ $flash->start();
 
 // Setup Twig Template Engine
 $loader = new Twig_Loader_Filesystem(ROOT_DIR.'templates');
-$template = new Twig_Environment($loader, array());
-$template->addGlobal('config',$config);
+$app["template"] = new Twig_Environment($loader, array());
+$app["template"]->addGlobal('config',$config);
 
 
 
